@@ -88,7 +88,7 @@ module.exports = app => {
     router.get('/', app.emqtt.controller.home.index);
 
     // mqtt_client,subscribe topic: a
-    app.emqtt.route('a', app.emqtt.controller.home.index);
+    app.emqtt.route('a', app.mqtt.controller.home.index);
 };
 
 // app/mqtt/controller/home.js
